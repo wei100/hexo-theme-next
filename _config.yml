@@ -139,7 +139,7 @@ menu_settings:
 sidebar:
   # Sidebar Position.
   position: left
-  #position: right
+  # position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -252,7 +252,7 @@ post_meta:
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: false
+  item_text_total: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -261,13 +261,13 @@ tag_icon: false
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
   #comment: Donate comment here.
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.jpeg
+  alipay: /images/alipay.jpeg
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -282,9 +282,9 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: false
-  title: # Custom header, leave empty to use the default one
-  display_in_home: false
+  enable: true
+  title: 最近文章
+  display_in_home: true
   params:
     maxCount: 5
     #PPMixingRate: 0.0
@@ -372,7 +372,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -380,7 +380,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -609,20 +609,21 @@ changyan:
 
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
+# based on leanCloud: https://console.leancloud.cn/
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
-  notify: false # Mail notifier
+  enable: true
+  appid: ENdlxy0bjdqsNse7GVbumm6P-gzGzoHsz
+  appkey: lFtyVriI7I53FVNFdyiHvOQ1
+  notify: true # Mail notifier
   verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
-  avatar: mm # Gravatar style
+  placeholder: 留下足迹... # Comment box placeholder
+  avatar: monsterid # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
-  language: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  language: zh-cn # Language, available values: en, zh-cn
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: false # Whether to record the commenter IP
+  recordIP: true # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
 
